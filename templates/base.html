@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ site.title }}{% if title %} - {{ title }}{% endif %}</title>
     <script
-        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        src="/static/js/tailwindcss.js?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -15,7 +15,7 @@
             },
         };
     </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="/static/js/alpine.min.js"></script>
     <script>
         function updateTheme() {
             const theme = localStorage.getItem("theme");
