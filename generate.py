@@ -38,7 +38,8 @@ class MarkdownSite:
         return {
             'content': html_content,
             'title': post.metadata.get('title', 'Untitled'),
-            'date': post.metadata.get('date', ''),
+            'created': post.metadata.get('created', ''),
+            'updated': post.metadata.get('updated', ''),
             'url': f"/posts/{safe_title}.html"
         }
 
@@ -112,7 +113,7 @@ class MarkdownSite:
                 'year': datetime.now().year,
                 'author': self.config['site'].get('author', '')
             },
-            posts=sorted(posts, key=lambda x: x['date'] or '', reverse=True)
+            posts=sorted(posts, key=lambda x: x['updated'] or '', reverse=True)
         )
 
         output_file = output_dir / 'index.html'
