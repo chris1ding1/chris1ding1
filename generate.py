@@ -40,7 +40,8 @@ class MarkdownSite:
             'title': post.metadata.get('title', 'Untitled'),
             'created': post.metadata.get('created', ''),
             'updated': post.metadata.get('updated', ''),
-            'url': f"/posts/{safe_title}.html"
+            'url': f"/posts/{safe_title}",
+            'file_path': f"/posts/{safe_title}.html"  # 实际文件路径带 .html
         }
 
     def slugify(self, text: str) -> str:
@@ -90,7 +91,7 @@ class MarkdownSite:
             )
 
             # 保存文章
-            output_file = output_dir / post_data['url'].lstrip('/')
+            output_file = output_dir / post_data['file_path'].lstrip('/')
             output_file.parent.mkdir(exist_ok=True)
             output_file.write_text(html, encoding='utf-8')
 
