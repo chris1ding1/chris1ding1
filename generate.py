@@ -5,6 +5,7 @@ import markdown
 import frontmatter
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
+from slugify import slugify
 
 class MarkdownSite:
     def __init__(self, config_path: str = "config.yaml"):
@@ -32,22 +33,20 @@ class MarkdownSite:
         post = frontmatter.load(str(file_path))
         html_content = self.md.convert(post.content)
 
-        # 生成 URL 安全的标题
-        safe_title = post.metadata.get('slug') or self.slugify(post.metadata.get('title', 'untitled'))
+        # 直接使用 slugify，它会自动处理空格转连字符
+        english_title = post.metadata.get('english-title')
+        title = post.metadata.get('title', 'Untitled')
+        safe_title = post.metadata.get('slug') or slugify(english_title if english_title else title)
 
         return {
             'content': html_content,
-            'title': post.metadata.get('title', 'Untitled'),
+            'title': title,
+            'english_title': english_title,
             'created': post.metadata.get('created', ''),
             'updated': post.metadata.get('updated', ''),
             'url': f"/posts/{safe_title}",
-            'file_path': f"/posts/{safe_title}.html"  # 实际文件路径带 .html
+            'file_path': f"/posts/{safe_title}.html"
         }
-
-    def slugify(self, text: str) -> str:
-        """将标题转换为 URL 安全的格式"""
-        # 这是一个简单的实现，您可以根据需要扩展
-        return text.lower().replace(' ', '-')
 
     def copy_static_files(self):
         static_dir = Path(self.config['paths']['static'])
