@@ -23,7 +23,7 @@
                                     {% endif %}
                             </header>
                             <div class="mt-8 prose dark:prose-invert" data-mdx-content="true">
-                                {{ post.content }}
+                                {{ post.content|safe }}
                             </div>
                         </article>
                     </div>
