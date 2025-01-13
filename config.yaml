@@ -1,0 +1,20 @@
+site:
+  title: "Blog"
+  author: "Chris"
+  description: ""
+  social:
+    x: ""
+    instagram: ""
+    github: "https://github.com/chris1ding1"
+    linkedin: ""
+
+paths:
+  content: "content"
+  output: "dist"
+  static: "static"
+
+projects:
+  - name: "WishWell"
+    description: "May you be free."
+    link: "https://wishwell.life/"
+    icon: "https://wishwell.life/favicons/favicon.svg"
