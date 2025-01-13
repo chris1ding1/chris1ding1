@@ -25,8 +25,7 @@ class MarkdownSite:
     def setup_markdown(self):
         self.md = markdown.Markdown(extensions=[
             'fenced_code',
-            'tables',
-            'toc'
+            'tables'
         ])
 
     def process_markdown_file(self, file_path: Path) -> dict:
@@ -40,7 +39,6 @@ class MarkdownSite:
             'content': html_content,
             'title': post.metadata.get('title', 'Untitled'),
             'date': post.metadata.get('date', ''),
-            'toc': getattr(self.md, 'toc', ''),
             'url': f"/posts/{safe_title}.html"
         }
 
