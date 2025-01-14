@@ -12,7 +12,7 @@ site:
 paths:
   content: "content"
   output: "dist"
-  static: "static"
+  public: "public"
 
 projects:
   - name: "WishWell"

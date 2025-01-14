@@ -49,15 +49,11 @@ class MarkdownSite:
             'file_path': f"/posts/{safe_title}.html"
         }
 
-    def copy_static_files(self):
-        static_dir = Path(self.config['paths']['static'])
+    def copy_public_files(self):
+        public_dir = Path(self.config['paths']['public'])
         output_dir = Path(self.config['paths']['output'])
-
-        if static_dir.exists():
-            static_output = output_dir / 'static'
-            if static_output.exists():
-                shutil.rmtree(static_output)
-            shutil.copytree(static_dir, static_output)
+        print(public_dir, output_dir)
+        shutil.copytree(public_dir, output_dir, dirs_exist_ok=True)
 
     def generate_site(self):
         content_dir = Path(self.config['paths']['content'])
@@ -102,12 +98,10 @@ class MarkdownSite:
         self.generate_about(output_dir)
 
         # 复制静态文件
-        self.copy_static_files()
+        self.copy_public_files()
 
         # 站点地图
         self.generate_sitemap(posts, output_dir)
-        self.generate_index_now(output_dir)
-        self.generate_robots(output_dir)
         print(f"成功生成网站！共处理 {len(posts)} 篇文章")
 
     def generate_index(self, posts: list, output_dir: Path):
@@ -123,12 +117,6 @@ class MarkdownSite:
 
         output_file = output_dir / 'index.html'
         output_file.write_text(html, encoding='utf-8')
-
-    def generate_index_now(self, output_dir: Path):
-        shutil.copy('./6516fb3b0ea4405591ef51c58a52bcc7.txt', output_dir)
-
-    def generate_robots(self, output_dir: Path):
-        shutil.copy('./robots.txt', output_dir)
 
     def generate_about(self, output_dir: Path):
         """生成 about 页面"""
