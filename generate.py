@@ -106,7 +106,8 @@ class MarkdownSite:
 
         # 站点地图
         self.generate_sitemap(posts, output_dir)
-
+        self.generate_index_now(output_dir)
+        self.generate_robots(output_dir)
         print(f"成功生成网站！共处理 {len(posts)} 篇文章")
 
     def generate_index(self, posts: list, output_dir: Path):
@@ -122,6 +123,12 @@ class MarkdownSite:
 
         output_file = output_dir / 'index.html'
         output_file.write_text(html, encoding='utf-8')
+
+    def generate_index_now(self, output_dir: Path):
+        shutil.copy('./6516fb3b0ea4405591ef51c58a52bcc7.txt', output_dir)
+
+    def generate_robots(self, output_dir: Path):
+        shutil.copy('./robots.txt', output_dir)
 
     def generate_about(self, output_dir: Path):
         """生成 about 页面"""
