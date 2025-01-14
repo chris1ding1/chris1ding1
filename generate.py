@@ -6,6 +6,7 @@ import frontmatter
 from jinja2 import Environment, FileSystemLoader
 from datetime import datetime
 from slugify import slugify
+from xml.etree import ElementTree as ET
 
 class MarkdownSite:
     def __init__(self, config_path: str = "config.yaml"):
@@ -103,6 +104,9 @@ class MarkdownSite:
         # 复制静态文件
         self.copy_static_files()
 
+        # 站点地图
+        self.generate_sitemap(posts, output_dir)
+
         print(f"成功生成网站！共处理 {len(posts)} 篇文章")
 
     def generate_index(self, posts: list, output_dir: Path):
@@ -133,6 +137,41 @@ class MarkdownSite:
 
         output_file = output_dir / 'about.html'
         output_file.write_text(html, encoding='utf-8')
+
+    def generate_sitemap(self, posts: list, output_dir: Path):
+        """使用 ElementTree 生成站点地图 XML"""
+        # 创建根元素，添加命名空间
+        urlset = ET.Element('urlset')
+        urlset.set('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9')
+
+        # 添加首页
+        url = ET.SubElement(urlset, 'url')
+        loc = ET.SubElement(url, 'loc')
+        loc.text = self.config['site']['url']
+
+        # 添加所有文章页面
+        for post in posts:
+            url = ET.SubElement(urlset, 'url')
+            loc = ET.SubElement(url, 'loc')
+            loc.text = self.config['site']['url'] + post['url']
+
+        # 添加关于页面
+        url = ET.SubElement(urlset, 'url')
+        loc = ET.SubElement(url, 'loc')
+        loc.text = self.config['site']['url'] + '/about'
+
+        # 创建 ElementTree 对象
+        tree = ET.ElementTree(urlset)
+
+        # 写入文件，添加 XML 声明和正确的缩进
+        output_file = output_dir / 'sitemap.xml'
+        with output_file.open('wb') as f:
+            tree.write(f, encoding='utf-8', xml_declaration=True)
+
+        # 美化 XML 输出（可选）
+        from xml.dom import minidom
+        xml_str = minidom.parse(str(output_file)).toprettyxml(indent='  ')
+        output_file.write_text(xml_str, encoding='utf-8')
 
 if __name__ == '__main__':
     site = MarkdownSite()
