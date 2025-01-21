@@ -8,11 +8,13 @@ updated: 2025-01-21
 ## 标签元素
 
 ### html lang
+
 `<html lang="">`
 
 规范值请查看 [HTML Language Code Reference](https://www.w3schools.com/tags/ref_language_codes.asp)
 
 ### title 标题
+
 `<title></title>`
 
 - ahrefs 的建议 "50 - 70 个字符（max 600 pixels）"
@@ -20,15 +22,18 @@ updated: 2025-01-21
 - [Google 关于标题的最佳实践](https://developers.google.com/search/docs/appearance/title-link)
 
 ### meta keywords 关键词
+
 `<meta name="keywords" content="">`
 
 ### meta description 描述摘要
+
 `<meta name="description" content="">`
 
 - ahrefs 的建议 "110 到 160 个字符之间"
 - [Google 中控制搜索结果中的摘要](https://developers.google.com/search/docs/appearance/snippet)
 
 ### 结构化数据 Schema
+
 "网站名称" 的结构化数据格式，简单例子：
 
 ```javascript
@@ -68,6 +73,7 @@ Schema.org 结构化数据标记图片内容的代码例子：
 ```
 
 ### Open Graph 标签
+
 官网 [Open Graph protocol](https://ogp.me/)
 
 ```html
@@ -93,12 +99,14 @@ Schema.org 结构化数据标记图片内容的代码例子：
 - TG 缓存刷新机器人 `@WebpageBot`
 
 ### Twitter 卡
+
 - [Twitter 卡的说明](https://developer.x.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 - [Twitter 卡官方验证器](https://cards-dev.x.com/validator) `curl -v -A Twitterbot <url>`
 
 ### 其他配置
 
 #### robots 机器人爬虫
+
 - index：允许搜索引擎索引（收录）这个页面；相反 noindex
 - follow：允许搜索引擎跟踪（爬取）页面上的链接；相反 nofollow
 
@@ -107,11 +115,13 @@ Schema.org 结构化数据标记图片内容的代码例子：
 ```
 
 #### 自适应
+
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 ```
 
 #### `a` 标签的 `ref` 属性
+
 - rel="UGC" 应适用于用户生成的链接。例如，博客评论、论坛帖子
 - rel="sponsored" 应适用于广告、赞助、或一些其他补偿协议的链接
 
@@ -124,24 +134,29 @@ Schema.org 结构化数据标记图片内容的代码例子：
 ## 文件
 
 ### 站点地图 sitemap.xml
+
 - [站点地图官方协议](https://www.sitemaps.org/)
 - [Google 关于站点地图的说明](https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview)
 
 ### robots.txt
-[Google 关于 robots.txt 简介](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
-[允许所有的例子](https://github.com/chris1ding1/config-hub/blob/main/robots.txt)
+
+- [Google 关于 robots.txt 简介](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+- [允许所有的例子](https://github.com/chris1ding1/config-hub/blob/main/robots.txt)
 
 ### IndexNow
+
 - [IndexNow | 必应的说明使用生成](https://www.bing.com/indexnow/getstarted)
 - [indexnow 协议官网](https://www.indexnow.org/)
 
 ### Favicon icon
+
 - [关于 Google 定义网站图标的说明](https://developers.google.com/search/docs/appearance/favicon-in-search)
 - [favicon 生成工具 | RealFavIconGenerator](https://realfavicongenerator.net/)
 
 ## 站长平台和平台工具
 
 ### 站长工具
+
 - [谷歌站长工具](https://search.google.com/search-console)
 - [必应网站管理员工具](https://www.bing.com/webmasters)
 - [Yandex](https://webmaster.yandex.com/welcome/)
@@ -149,11 +164,13 @@ Schema.org 结构化数据标记图片内容的代码例子：
 - [百度站长](https://ziyuan.baidu.com/site/index)
 
 ### SEO 工具
+
 - [Ahrefs.com](https://ahrefs.com)
 - [SEMrush](https://www.semrush.com/)
 - [SimilarWeb](https://www.similarweb.com/)
 
 ### 关键词和趋势工具
+
 - [Google Ads 关键词优化](https://ads.google.com/intl/en_us/home/tools/keyword-planner/)
 - [Google Alerts 关键词提醒](https://www.google.com/alerts)
 - [Google 趋势指数](https://trends.google.com/trends/)
@@ -161,6 +178,7 @@ Schema.org 结构化数据标记图片内容的代码例子：
 - 微信指数
 
 ### 文档
+
 - [SEO 初学者指南 By ahrefs](https://ahrefs.com/zh/seo)
 - [Ahrefs 博客](https://ahrefs.com/blog/zh/)
 - [Google 搜索中心 | Google for Developers](https://developers.google.com/search/docs)
