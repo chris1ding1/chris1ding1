@@ -2,9 +2,8 @@
 title: SEO
 english-title: SEO
 created: 2025-01-13
-updated: 2025-01-13
+updated: 2025-01-21
 ---
-
 
 ## 标签元素
 
@@ -130,6 +129,7 @@ Schema.org 结构化数据标记图片内容的代码例子：
 
 ### robots.txt
 [Google 关于 robots.txt 简介](https://developers.google.com/search/docs/crawling-indexing/robots/intro)
+[允许所有的例子](https://github.com/chris1ding1/config-hub/blob/main/robots.txt)
 
 ### IndexNow
 - [IndexNow | 必应的说明使用生成](https://www.bing.com/indexnow/getstarted)
