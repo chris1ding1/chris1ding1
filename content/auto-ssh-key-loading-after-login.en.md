@@ -1,8 +1,10 @@
 ---
 title: Auto SSH Key Loading After Login
-english-title: auto-ssh-key-loading-after-login
-created: 2025-01-21
-updated: 2025-01-21
+keywords:
+  - SSH
+  - Auto loading
+created: 2025-01-21 07:52:34
+updated: 2025-01-21 07:52:34
 ---
 
 `vim ~/.ssh/config`

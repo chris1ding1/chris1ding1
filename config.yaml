@@ -1,8 +1,12 @@
 site:
   url: "https://chrisding.xyz"
-  title: "Blog"
+  name: "Chris's blog"
   author: "Chris"
-  description: ""
+  locale: "en"
+  keywords:
+    - Blog
+    - Chris
+  description: "Chris's blog."
   social:
     x: "https://x.com/chris1ding1"
     instagram: ""

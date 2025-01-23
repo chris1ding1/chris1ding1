@@ -1,8 +1,12 @@
 ---
 title: JS not working under a custom domain on Cloudflare Pages
-english-title: JS not working under a custom domain on Cloudflare Pages
-created: 2025-01-14
-updated: 2025-01-14
+keywords:
+  - Cloudflare
+  - Eror
+  - website
+  - JS/CSS
+created: 2025-01-14 13:29:32
+updated: 2025-01-14 13:29:32
 ---
 
 The website loads the CSS styles via `<script src="CDN tailwindcss.js"></script>`, and the request status shows as successful, but the CSS styles are not applied to the website. However, the CSS works correctly on the default domain `*.page.dev`.

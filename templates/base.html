@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="h-full antialiased light" style="color-scheme: light">
+<html lang="{% if page and page.lang %}{{ page.lang }}{% else %}{{ site.locale|default('en') }}{% endif %}" class="h-full antialiased light" style="color-scheme: light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <title>{{ site.title }}{% if title %} - {{ title }}{% endif %}</title>
-    <script
-        src="/static/js/tailwindcss.js?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <meta name="description" content="{% if page and page.description %}{{ page.description }}{% else %}{{ site.description|default('') }}{% endif %}" />
+    <meta name="keywords" content="{% if page and page.keywords %}{{ page.keywords|join(', ') }}{% else %}{{ site.keywords|join(', ') }}{% endif %}" />
+    <title>{% if page and page.title %} {{ page.title }} - {% endif %}{{ site.name }}</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -16,7 +17,7 @@
             },
         };
     </script>
-    <script defer src="/static/js/alpine.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script>
         function updateTheme() {
             const theme = localStorage.getItem("theme");
