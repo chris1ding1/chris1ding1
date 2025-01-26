@@ -17,9 +17,14 @@ paths:
   content: "content"
   output: "dist"
   public: "public"
+  drafts: "draft"
 
 projects:
   - name: "WishWell"
     description: "May you be free."
     link: "https://wishwell.life/"
     icon: "https://wishwell.life/favicons/favicon.svg"
+  - name: "1024 Developer Platform"
+    description: "Tech-related sharing and discussions, developer tools and data report."
+    link: "https://1024.dev/"
+    icon: "https://1024.dev/favicon.svg"
