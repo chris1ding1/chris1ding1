@@ -12,6 +12,8 @@ updated: 2025-01-26 15:00:52
 
 [Masonite 官方文档](https://docs.masoniteproject.com/)
 
+**推荐使用 Python 3.11 版本。更加稳定，不容易出错。**
+
 ## 安装和启动
 
 ### 创建程序项目目录
