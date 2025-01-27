@@ -4,7 +4,7 @@ keywords:
   - SEO
   - website
 created: 2025-01-13 09:42:35
-updated: 2025-01-21 08:45:35
+updated: 2025-01-21 12:06:38
 ---
 
 ## 标签元素
@@ -179,9 +179,10 @@ Schema.org 结构化数据标记图片内容的代码例子：
 - [百度指数](https://index.baidu.com/)
 - 微信指数
 
-### 文档
+### 文档和其他工具
 
 - [SEO 初学者指南 By ahrefs](https://ahrefs.com/zh/seo)
 - [Ahrefs 博客](https://ahrefs.com/blog/zh/)
 - [Google 搜索中心 | Google for Developers](https://developers.google.com/search/docs)
 - [Bing Webmaster Tools 必应网站站长指南](https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a)
+- [Txtify 文本转换工具](https://txtify.app/) 可以便捷的统计字符数。写好标题、描述等信息的时候，可以通过这个来看下字符数是多少
