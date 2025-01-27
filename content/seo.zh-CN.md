@@ -4,7 +4,7 @@ keywords:
   - SEO
   - website
 created: 2025-01-13 09:42:35
-updated: 2025-01-27 12:06:38
+updated: 2025-01-27 12:45:42
 ---
 
 ## 标签元素
@@ -186,3 +186,13 @@ Schema.org 结构化数据标记图片内容的代码例子：
 - [Google 搜索中心 | Google for Developers](https://developers.google.com/search/docs)
 - [Bing Webmaster Tools 必应网站站长指南](https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a)
 - [Txtify 文本转换工具](https://txtify.app/) 可以便捷的统计字符数。写好标题、描述等信息的时候，可以通过这个来看下字符数是多少
+
+### 产品项目提交和推广
+
+完成项目后，可以将项目提交到产品目录网站里。有的平台无条件免费的，也有平台是提交免费，想快速发布的话就要付费，也可以选择数月不等的周期免费发布出来。
+
+- [Indie Voice.app](https://indievoice.app/)
+- [Indie hackers](https://www.indiehackers.com/)
+- [Product Hunt](https://www.producthunt.com/)
+- [Pitch Wall.co](https://pitchwall.co/)
+- [uneed](https://www.uneed.best/)
