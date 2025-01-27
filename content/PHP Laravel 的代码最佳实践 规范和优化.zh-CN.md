@@ -8,7 +8,7 @@ keywords:
   - 最佳实践
   - PHP
 created: 2025-01-26 08:03:46
-updated: 2025-01-26 08:03:46
+updated: 2025-01-27 08:26:55
 ---
 
 ## 生产环境的 Composer
@@ -34,7 +34,7 @@ composer install --prefer-dist --no-dev -o
 
 ### 文件缓存
 
-一个命令缓存所有文件（配置 config、事件 event、路由 route、视图 vite）：
+一个命令缓存所有文件（配置 config、事件 event、路由 route、视图 view）：
 
 ```shell
 php artisan optimize
