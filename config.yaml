@@ -29,6 +29,6 @@ projects:
     link: "https://1024.dev/"
     icon: "https://1024.dev/favicon.svg"
   - name: "Txtify"
-    description: ""
+    description: "A handy text processing assistant with practical features including character counting, case conversion, and singular/plural transformation - making text processing simpler and more efficient."
     link: "https://txtify.app"
     icon: "https://txtify.app/favicon.svg"
