@@ -28,3 +28,7 @@ projects:
     description: "Tech-related sharing and discussions, developer tools and data report."
     link: "https://1024.dev/"
     icon: "https://1024.dev/favicon.svg"
+  - name: "Txtify"
+    description: ""
+    link: "https://txtify.app"
+    icon: "https://txtify.app/favicon.svg"
