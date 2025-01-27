@@ -117,3 +117,15 @@
     </div>
 </div>
 {% endblock %}
+
+{% block head %}
+<script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "{{ site.name }}",
+      "alternateName" : "chris ding",
+      "url" : "{{ site.url }}"
+    }
+</script>
+{% endblock %}
