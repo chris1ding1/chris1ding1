@@ -10,7 +10,7 @@ keywords:
   - Lambda
 description: "Deploy the Python Masonite framework on AWS Lambda and use GitHub for deployment. Create a Lambda function, write the Lambda entry point, and configure a GitHub workflow YAML file. Set up an API Gateway and configure the custom domain for access."
 created: 2025-01-27 15:28:55
-updated: 2025-01-27 15:28:55
+updated: 2025-01-28 15:50:14
 ---
 
 ## Create Lambda function
@@ -186,6 +186,14 @@ jobs:
 ## Deploy
 
 GitHub -> Repositorie -> Actions -> AWS Lambda Deploy -> Run workflow.
+
+Currently, deployment is triggered manually. To enable automatic deployment on push, replace `workflow_dispatch:` with the following code:
+
+```yml
+  push:
+    branches:
+      - main
+```
 
 ## Domain
 
