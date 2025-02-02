@@ -31,3 +31,11 @@
     </div>
 </div>
 {% endblock %}
+
+{% block head %}
+{% if post.schema_article %}
+<script type="application/ld+json">
+    {{ post.schema_article | safe }}
+</script>
+{% endif %}
+{% endblock %}

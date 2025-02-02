@@ -4,6 +4,7 @@ site:
   alternate_name:
   author: "Chris"
   locale: "en"
+  time_zone: "UTC"
   keywords:
     - Blog
     - Chris
