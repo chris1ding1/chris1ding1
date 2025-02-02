@@ -4,7 +4,7 @@ keywords:
   - SEO
   - website
 created: 2025-01-13 09:42:35
-updated: 2025-01-29 09:10:10
+updated: 2025-02-02 06:18:01
 ---
 
 ## 标签元素
@@ -185,7 +185,9 @@ Schema.org 结构化数据标记图片内容的代码例子：
 - [Ahrefs 博客](https://ahrefs.com/blog/zh/)
 - [Google 搜索中心 | Google for Developers](https://developers.google.com/search/docs)
 - [Bing Webmaster Tools 必应网站站长指南](https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a)
-- [Txtify 文本转换工具](https://txtify.app/) 可以便捷的统计字符数。写好标题、描述等信息的时候，可以通过这个来看下字符数是多少
+- [Txtify 文本转换工具 - 用来检测一段文字的字符数量](https://txtify.app/)
+- [Merkle SEO hreflang 页面元素和站点地图 标记测试工具](https://technicalseo.com/seo-tools/hreflang/)
+- [Aleyda Solis 的 hreflang 页面元素和站点地图 标记生成器工具](https://www.aleydasolis.com/english/international-seo-tools/hreflang-tags-generator/)
 
 ### 产品项目提交和推广
 
