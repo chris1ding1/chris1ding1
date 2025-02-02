@@ -1,6 +1,7 @@
 site:
   url: "https://chrisding.xyz"
   name: "Chris's blog"
+  alternate_name:
   author: "Chris"
   locale: "en"
   keywords:
