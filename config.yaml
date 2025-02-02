@@ -12,6 +12,7 @@ site:
     instagram: ""
     github: "https://github.com/chris1ding1"
     linkedin: ""
+  sort_by: "created"
 
 paths:
   content: "content"
