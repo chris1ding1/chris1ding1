@@ -7,12 +7,12 @@ site:
     - Blog
     - Chris
   description: "Chris's blog."
+  sort_by: "created"
   social:
     x: "https://x.com/chris1ding1"
     instagram: ""
     github: "https://github.com/chris1ding1"
     linkedin: ""
-  sort_by: "created"
 
 paths:
   content: "content"
