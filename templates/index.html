@@ -121,7 +121,7 @@
 {% block head %}
 {% if schema_site_name %}
 <script type="application/ld+json">
-    {{ schema_site_name | tojson | safe }}
+    {{ schema_site_name | safe }}
 </script>
 {% endif %}
 {% endblock %}
