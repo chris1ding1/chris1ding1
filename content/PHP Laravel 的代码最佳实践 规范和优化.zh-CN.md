@@ -82,8 +82,8 @@ parameters:
 
 ## 测试框架
 
-[Pest](https://pestphp.com/)
-[PHPUnit](https://phpunit.de/)
+- [Pest](https://pestphp.com/)
+- [PHPUnit](https://phpunit.de/)
 
 ## Laravel
 

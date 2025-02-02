@@ -148,7 +148,7 @@ class MarkdownSiteGenerator:
             site={
                 **self.config['site']
             },
-            posts=sorted(posts, key=lambda x: x['sort_by'] or '', reverse=True)
+            posts=sorted(posts, key=lambda x: x[sort_by] or '', reverse=True)
         )
 
         output_file = output_dir / 'index.html'
