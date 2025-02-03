@@ -19,6 +19,7 @@ class MarkdownSiteGenerator:
     Core class for static site generation.
     Handles Markdown conversion, template rendering, and static file generation.
     """
+    X_CARD_TYPE_SUMMARY = "summary"
 
     def __init__(self, config_path: str = "config.yaml"):
         """Initialize the static site generator."""
@@ -79,7 +80,8 @@ class MarkdownSiteGenerator:
                     'keywords': post_data['keywords'],
                     'title': post_data['title'],
                 },
-                post=post_data
+                post=post_data,
+                x_card_html=post_data['x_card_html']
             )
 
             # Save post page
@@ -154,7 +156,12 @@ class MarkdownSiteGenerator:
             'lang': lang,
             'description': post.metadata.get('description', ''),
             'keywords': post.metadata.get('keywords', []),
-            'schema_article': json.dumps(schema_article, ensure_ascii=False)
+            'schema_article': json.dumps(schema_article, ensure_ascii=False),
+            'x_card_html': self.generate_x_card(
+                card_type= self.X_CARD_TYPE_SUMMARY,
+                title= title,
+                description= post.metadata.get('description', '')
+            )
         }
 
     def generate_index(self, posts: list, output_dir: Path):
@@ -175,7 +182,12 @@ class MarkdownSiteGenerator:
                 **self.config['site']
             },
             posts=sorted_posts,
-            schema_site_name=self.generate_schema_site_name()
+            schema_site_name=self.generate_schema_site_name(),
+            x_card_html = self.generate_x_card(
+                card_type= self.X_CARD_TYPE_SUMMARY,
+                title= self.config['site']['name'],
+                description= self.config['site']['description']
+            )
         )
 
         output_file = output_dir / 'index.html'
@@ -194,7 +206,12 @@ class MarkdownSiteGenerator:
                 'description': 'About me',
                 'keywords': ['About', 'Bio', 'Chris Ding']
             },
-            projects=self.config.get('projects', [])
+            projects=self.config.get('projects', []),
+            x_card_html = self.generate_x_card(
+                card_type= self.X_CARD_TYPE_SUMMARY,
+                title = 'About',
+                description= 'About me'
+            )
         )
 
         output_file = output_dir / 'about.html'
@@ -255,6 +272,27 @@ class MarkdownSiteGenerator:
             return json.dumps(schema_site_name, ensure_ascii=False)
         return None
 
+    def generate_x_card(self, card_type, title, description):
+        """Generate X card"""
+        processed_title = title
+        if len(title) > 70:
+            processed_title = title[:67] + "..."
+
+        processed_description = description
+        if len(description) > 200:
+            processed_description = description[:197] + "..."
+
+        x_account = self.config['site']['social'].get('x', '')
+        template = self.jinja_env.get_template('components/x_card.html')
+        html = template.render(
+            x_card={
+                'card_type': card_type,
+                'site': x_account,
+                'title': processed_title,
+                'description': processed_description
+            }
+        )
+        return html
     def copy_public_files(self):
         """Copy static files"""
 
