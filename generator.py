@@ -19,6 +19,7 @@ class MarkdownSiteGenerator:
     Core class for static site generation.
     Handles Markdown conversion, template rendering, and static file generation.
     """
+
     X_CARD_TYPE_SUMMARY = "summary"
 
     def __init__(self, config_path: str = "config.yaml"):
