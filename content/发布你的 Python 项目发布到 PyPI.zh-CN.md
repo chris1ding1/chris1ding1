@@ -1,13 +1,15 @@
 ---
-title:
-slug:
+title: "发布你的 Python 项目到 PyPI"
+slug: publish-your-python-package-to-pypi
 keywords:
   - PyPI
   - Hatch
   - Build
-description: ""
-created: 2025-01-21 07:52:34
-updated: 2025-01-21 07:52:34
+  - Package
+  - Publish
+description: "使用 Hatch 工具将 Python 源码发布到 PyPI，Hatch 的下载安装，项目信息配置，编译，命令钩子，以及测试正式环境的发布的具体过程。"
+created: 2025-02-04 14:13:09
+updated: 2025-02-04 14:13:09
 ---
 
 ## 使用的工具
@@ -132,7 +134,7 @@ hatch env create
 hatch shell
 ```
 
-退出的话 `exit`
+退出的的话执行 `exit`。
 
 ## 执行你的源码项目命令
 
@@ -181,5 +183,5 @@ hatch publish
 
 - `hatch env remove` 删除环境
 - `hatch env show` 查看环境
-- `hatch -r <XXX>` 重载执行
+- `hatch -r` 重载执行
 - `hatch clean` 清除旧构建
