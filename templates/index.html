@@ -10,10 +10,10 @@
                         class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100"></h1>
                     <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400"></p>
                     <div class="mt-6 flex gap-6">
-                        {% if site.social.x %}
+                        {% if site.socials.x %}
                         <a class="group -m-1 p-1"
                             aria-label="Follow on X"
-                            href="{{ "https://x.com/"+site.social.x }}"
+                            href="{{ "https://x.com/"+site.socials.x }}"
                             target="_blank">
                             <svg
                                 viewBox="0 0 24 24" aria-hidden="true"
@@ -24,10 +24,10 @@
                             </svg>
                         </a>
                         {% endif %}
-                        {% if site.social.instagram %}
+                        {% if site.socials.instagram %}
                         <a class="group -m-1 p-1"
                             aria-label="Follow on Instagram"
-                            href="{{ site.social.instagram }}"
+                            href="{{ site.socials.instagram }}"
                             target="_blank">
                             <svg viewBox="0 0 24 24" aria-hidden="true"
                                 class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
@@ -40,10 +40,10 @@
                             </svg>
                         </a>
                         {% endif %}
-                        {% if site.social.github %}
+                        {% if site.socials.github %}
                         <a class="group -m-1 p-1"
                             aria-label="Follow on GitHub"
-                            href="{{ site.social.github }}"
+                            href="{{ site.socials.github }}"
                             target="_blank">
                             <svg viewBox="0 0 24 24" aria-hidden="true"
                                 class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">
@@ -53,10 +53,10 @@
                             </svg>
                         </a>
                         {% endif %}
-                        {% if site.social.linkedin %}
+                        {% if site.socials.linkedin %}
                         <a class="group -m-1 p-1"
                             aria-label="Follow on LinkedIn"
-                            href="{{ site.social.linkedin }}"
+                            href="{{ site.socials.linkedin }}"
                             target="_blank">
                             <svg viewBox="0 0 24 24" aria-hidden="true"
                                 class="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300">

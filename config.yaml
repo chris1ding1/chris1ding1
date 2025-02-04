@@ -10,7 +10,7 @@ site:
     - Chris
   description: "Chris's blog."
   sort_by: "created"
-  social:
+  socials:
     x: "chris1ding1"
     instagram: ""
     github: "https://github.com/chris1ding1"
@@ -20,7 +20,7 @@ paths:
   content: "content"
   output: "dist"
   public: "public"
-  drafts: "draft"
+  drafts: "drafts"
 
 projects:
   - name: "WishWell"
