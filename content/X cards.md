@@ -7,8 +7,8 @@ keywords:
   - Markup
   - Sample Code
 description: "With X Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. Simply add a few lines of markup to your webpage, and users who Tweet links to your content will have a “Card” added to the Tweet that’s visible to their followers."
-created: 2025-02-05 09:42:35
-updated: 2025-02-05 06:18:01
+created: 2025-02-05 05:54:00
+updated: 2025-02-05 05:54:00
 ---
 
 ## About
