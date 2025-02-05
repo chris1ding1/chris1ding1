@@ -4,7 +4,7 @@ keywords:
   - SEO
   - website
 created: 2025-01-13 09:42:35
-updated: 2025-02-02 06:18:01
+updated: 2025-02-05 06:21:47
 ---
 
 ## 标签元素
@@ -101,6 +101,8 @@ Schema.org 结构化数据标记图片内容的代码例子：
 - TG 缓存刷新机器人 `@WebpageBot`
 
 ### Twitter 卡
+
+代码例子可查看 [关于 Twitter (X) Meta 代码例子说明](https://chrisding.xyz/posts/about-twitter-x-cards)
 
 - [Twitter 卡的说明](https://developer.x.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 - [Twitter 卡官方验证器](https://cards-dev.x.com/validator) `curl -v -A Twitterbot <url>`
