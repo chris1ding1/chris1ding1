@@ -13,7 +13,7 @@ updated: 2025-02-05 06:38:52
 
 ## About
 
-[官方 Twitter 卡的说明](https://developer.x.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
+[About X Cards - X](https://developer.x.com/en/docs/twitter-for-websites/cards/overview/abouts-cards)
 
 With X Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. Simply add a few lines of markup to your webpage, and users who Tweet links to your content will have a “Card” added to the Tweet that’s visible to their followers.
 
