@@ -13,8 +13,8 @@ updated: 2025-02-02 09:37:53
 
 ## 代码编码格式化
 
-[PHP-CS-Fixer](https://github.com/PHP-CS-Fixer)
-[Laravel Pint](https://laravel.com/docs/11.x/pint)
+- [PHP-CS-Fixer](https://github.com/PHP-CS-Fixer)
+- [Laravel Pint](https://laravel.com/docs/11.x/pint)
 
 ## 约定
 
