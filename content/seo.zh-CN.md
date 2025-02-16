@@ -4,7 +4,7 @@ keywords:
   - SEO
   - website
 created: 2025-01-13 09:42:35
-updated: 2025-02-05 06:21:47
+updated: 2025-02-16 18:25:49
 ---
 
 ## 标签元素
@@ -201,3 +201,6 @@ Schema.org 结构化数据标记图片内容的代码例子：
 - [Pitch Wall.co](https://pitchwall.co/)
 - [uneed](https://www.uneed.best/)
 - [betalist](https://betalist.com/)
+
+- [神奇集](https://hao.logosc.cn/)
+- [小众软件](https://meta.appinn.net/)
