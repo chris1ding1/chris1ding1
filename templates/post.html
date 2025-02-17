@@ -12,11 +12,11 @@
                                 <h1
                                     class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
                                     {{ post.title }}</h1>
-                                    {% if post.date %}
-                                    <time datetime="{{ post.date }}"
+                                    {% if post.updated_humanized %}
+                                    <time datetime="{{ post.updated_iso }}" title="{{ post.updated }}"
                                     class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"><span
                                         class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span><span
-                                        class="ml-3">{{ post.date }}</span>
+                                        class="ml-3">{{ post.updated_humanized }}</span>
                                     </time>
                                     {% endif %}
                             </header>
