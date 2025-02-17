@@ -10,6 +10,15 @@ site:
     - Chris
   description: "Chris's blog."
   sort_by: "created"
+  article_type: "BlogPosting"
+  about:
+    type: Person
+    name: "Chris"
+    alternate_name: ""
+    description: ""
+    same_as:
+      - "https://x.com/chris1ding1"
+      - "https://bento.me/chrisding"
   socials:
     x: "chris1ding1"
     instagram: ""
