@@ -39,10 +39,12 @@ https://:<Your Project>.pages.dev/*
 - `X-Content-Type-Options: nosniff` Forces browsers to strictly use the declared content type. Prevents browsers from guessing file types.
 - `Referrer-Policy: no-referrer` Stops sending referrer information to other websites. Enhances user privacy.
 - `Permissions-Policy: document-domain=()` Disables document.domain modification. Prevents cross-domain attacks between subdomains.
-- `Content-Security-Policy:`
-  - `default-src 'self';` Only load resources (images, styles, etc.) from your own domain
-  - `script-src 'self';` Only load JavaScript files from your own domain
-  - `frame-ancestors 'none';` Block your site from being embedded in iframes anywhere
+
+`Content-Security-Policy:`
+
+- `default-src 'self';` Only load resources (images, styles, etc.) from your own domain
+- `script-src 'self';` Only load JavaScript files from your own domain
+- `frame-ancestors 'none';` Block your site from being embedded in iframes anywhere
 
 ```text
 /*
