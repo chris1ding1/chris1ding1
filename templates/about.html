@@ -1,14 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="sm:px-8 mt-16 sm:mt-32">
+<div class="sm:px-8 mt-14 sm:mt-24">
     <div class="mx-auto w-full max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
             <div class="mx-auto max-w-2xl lg:max-w-5xl">
                 <header class="max-w-2xl">
                     <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">About</h1>
-                    <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400"></p>
+                    <p class="mt-1 text-base text-zinc-600 dark:text-zinc-400"></p>
                 </header>
+                <div class="mt-4 sm:mt-4">
+                    是父亲，是儿子，是丈夫。好好学习，努力读书，健康，早睡早起！<br>
+                    赞赏、捐款：微信公众号喜欢作者大几百人民币 🤔 轻松筹性质相关应该上千或者近千人民币 🤔 开源程序近百人民币 🤔
+                </div>
                 <div class="mt-16 sm:mt-20">
                     <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
                         {% for project in projects %}
