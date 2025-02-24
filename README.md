@@ -1,6 +1,6 @@
 # Chris's Blog
 
-[chrisding'](https://chrisding.xyz)
+[chrisding](https://chrisding.xyz)
 
 ## Project
 
