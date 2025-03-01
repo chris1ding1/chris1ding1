@@ -1,11 +1,21 @@
-# Chris's Blog
+# Hi there, I'm Chris! 👋
 
-[chrisding'](https://chrisding.xyz)
+Welcome to my GitHub profile!
 
-## Project
+[My Blog](https://chrisding.xyz)
 
-- [Txtify](https://txtify.app/)
-- [WishWell](https://wishwell.life/)
+## Projects
+
+- [Txtify](https://txtify.app/): A handy text processing assistant packed with useful features—character counting, case conversion, singular/plural transformation, and more!
+- [WishWell](https://wishwell.life/): Global Index Rankings, Corruption Perceptions Index, World Happiness Index, Passport Index, Employment permit statistics, Dataset, Immigration office website directory and more.
+- [Timego](https://timego.app): What time is it? Current time. What day is it today? Calendar.
+- [1024](https://1024.dev): 👷 Developer Community
+
+## Connect with Me
+
+- [X](https://x.com/chris1ding1)
+
+Thanks for visiting my profile! Have a great day! 😊
 
 ## Deploy
 
