@@ -23,7 +23,10 @@ The three required properties:
 
 - `twitter:card` - The card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
 - `twitter:title` - A concise title for the related content
-- `twitter:site` or `twitter:site:id` - The Twitter (X) username (e.g., `@username`). The Twitter X ID (`twitter:site:id`).
+- `twitter:site` or `twitter:site:id`
+
+> `twitter:site`. The Twitter (X) username (`twitter:site`) e.g., '@username'
+> `twitter:site:id`. The Twitter X ID
 
 ### Summary Card
 
