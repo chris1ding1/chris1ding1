@@ -8,7 +8,7 @@ keywords:
   - Sample Code
 description: "With X Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. Simply add a few lines of markup to your webpage, and users who Tweet links to your content will have a “Card” added to the Tweet that’s visible to their followers."
 created: 2025-02-05 05:54:00
-updated: 2025-02-05 06:38:52
+updated: 2025-03-13 05:03:31
 ---
 
 ## About
@@ -18,6 +18,12 @@ updated: 2025-02-05 06:38:52
 With X Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. Simply add a few lines of markup to your webpage, and users who Tweet links to your content will have a “Card” added to the Tweet that’s visible to their followers.
 
 ## Card types
+
+The three required properties:
+
+- `twitter:card` - The card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
+- `twitter:title` - A concise title for the related content
+- `twitter:site` or `twitter:site:id` - The Twitter (X) username (e.g., `@username`). The Twitter X ID (`twitter:site:id`).
 
 ### Summary Card
 
