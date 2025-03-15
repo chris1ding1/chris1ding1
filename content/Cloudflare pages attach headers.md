@@ -12,7 +12,7 @@ created: 2025-02-18T18:29+0800
 updated: 2025-02-18 10:29
 ---
 
-## Create a `_headers` plain text file in the output folder of your project.
+## Create a `_headers` plain text file in the output folder of your project
 
 ```text
 [url]
