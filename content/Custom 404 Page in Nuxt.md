@@ -9,7 +9,7 @@ keywords:
   - Error Page
 description: "Different methods to customize a 404 page in Nuxt, along with relevant resources."
 created: 2025-03-12 19:54:50
-updated: 2025-03-12 19:54:50
+updated: 2025-03-15 04:21:36
 ---
 
 ## Method 1: Custom 404 Page via Pages Directory
