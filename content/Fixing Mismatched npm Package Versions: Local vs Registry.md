@@ -14,6 +14,8 @@ created: 2025-03-15 03:42:23
 updated: 2025-03-15 03:42:23
 ---
 
+[npm CLI Docs](https://docs.npmjs.com/cli)
+
 ## List installed packages
 
 ```console
@@ -63,7 +65,3 @@ npm install <package>
 ```
 
 `aliases: add, i, in, ins, inst, insta, instal, isnt, isnta, isntal, isntall`
-
-## See Also
-
-[npm CLI](https://docs.npmjs.com/cli)
