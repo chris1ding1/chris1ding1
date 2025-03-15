@@ -16,6 +16,8 @@ updated: 2025-03-12 19:54:50
 
 `touch pages/[...404].vue`
 
+***Non-standard recommended approach.***
+
 ## Method 2: Global Error Handling with `error.vue`
 
 `touch layouts/errors/404.vue`
@@ -38,6 +40,8 @@ const props = defineProps({
 })
 </script>
 ```
+
+***Customize only the 404 page component while letting Nuxt handle other errors natively.***
 
 ## See Also
 
