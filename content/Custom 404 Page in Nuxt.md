@@ -12,11 +12,6 @@ created: 2025-03-12 19:54:50
 updated: 2025-03-12 19:54:50
 ---
 
-- [Nuxt - Error Handling](https://nuxt.com/docs/getting-started/error-handling)
-- [Nuxt - Read and edit a live example in Error Handling](https://nuxt.com/docs/examples/advanced/error-handling)
-- [Nuxt - error.vue](https://nuxt.com/docs/guide/directory-structure/error)
-- [Nuxt - Source code. component nuxt-error-page](https://github.com/nuxt/nuxt/blob/main/packages/nuxt/src/app/components/nuxt-error-page.vue)
-
 ## Method 1: Custom 404 Page via Pages Directory
 
 `touch pages/[...404].vue`
@@ -43,3 +38,10 @@ const props = defineProps({
 })
 </script>
 ```
+
+## See Also
+
+- [Nuxt - Error Handling](https://nuxt.com/docs/getting-started/error-handling)
+- [Nuxt - Read and edit a live example in Error Handling](https://nuxt.com/docs/examples/advanced/error-handling)
+- [Nuxt - error.vue](https://nuxt.com/docs/guide/directory-structure/error)
+- [Nuxt - Source code. component nuxt-error-page](https://github.com/nuxt/nuxt/blob/main/packages/nuxt/src/app/components/nuxt-error-page.vue)
