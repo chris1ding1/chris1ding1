@@ -9,7 +9,7 @@ keywords:
   - CORS
 description: "Adding header to Cloudflare Pages: enabling CORS, disabling search engine indexing for pages.dev, and applying security configurations."
 created: 2025-02-18T18:29+0800
-updated: 2025-02-18 10:29
+updated: 2025-03-20 06:41:32
 ---
 
 ## Create a `_headers` plain text file in the output folder of your project
@@ -38,7 +38,6 @@ https://:<Your Project>.pages.dev/*
 - `X-Frame-Options: DENY` Prevents your website from being embedded in iframes on other sites. Stops clickjacking attacks.
 - `X-Content-Type-Options: nosniff` Forces browsers to strictly use the declared content type. Prevents browsers from guessing file types.
 - `Referrer-Policy: no-referrer` Stops sending referrer information to other websites. Enhances user privacy.
-- `Permissions-Policy: document-domain=()` Disables document.domain modification. Prevents cross-domain attacks between subdomains.
 
 `Content-Security-Policy:`
 
@@ -51,7 +50,6 @@ https://:<Your Project>.pages.dev/*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
-  Permissions-Policy: document-domain=()
   Content-Security-Policy: default-src 'self'; frame-ancestors 'none';
 ```
 
