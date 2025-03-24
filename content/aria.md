@@ -84,8 +84,8 @@ updated: 2025-03-24 06:22:58
 </div>
 ```
 
-[ARIA: 状态角色](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/status_role)
-[ARIA 实时区域](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA/Guides/Live_regions)
+- [ARIA: 状态角色](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/status_role)
+- [ARIA 实时区域](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA/Guides/Live_regions)
 
 ## 角色
 
@@ -93,7 +93,7 @@ updated: 2025-03-24 06:22:58
 
 ## 参考
 
-[无障碍](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility)
-[ARIA 参考](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference)
-[W3C - WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/)
-[ARIA 设计模式与实践指南](https://www.w3.org/WAI/ARIA/apg/)
+- [无障碍](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility)
+- [ARIA 参考](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference)
+- [W3C - WAI-ARIA](https://www.w3.org/WAI/standards-guidelines/aria/)
+- [ARIA 设计模式与实践指南](https://www.w3.org/WAI/ARIA/apg/)
