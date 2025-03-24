@@ -208,5 +208,7 @@ Access the `baseUrl` result:
   <meta id="i18n-og-alt-zh-Hans" property="og:locale:alternate" content="zh_Hans">
 ```
 
-[useLocaleHead](https://i18n.nuxtjs.org/docs/composables/use-locale-head)
-[API Options](https://i18n.nuxtjs.org/docs/api/options)
+## See Also
+
+- [useLocaleHead](https://i18n.nuxtjs.org/docs/composables/use-locale-head)
+- [API Options](https://i18n.nuxtjs.org/docs/api/options)
