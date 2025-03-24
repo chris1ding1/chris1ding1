@@ -9,13 +9,13 @@ keywords:
   - Accessibility
   - WAI-ARIA
 description: "HTML 无障碍访问属性相关说明。"
-created: 2025-03-24 06:22:58
-updated: 2025-03-24 06:22:58
+created: 2025-03-24 05:22:58
+updated: 2025-03-24 05:22:58
 ---
 
 ## 描述
 
-- `aria-label` 为没有文本内容元素增加描述内容，例如只有图标的按钮等。
+- `aria-label` 为没有文本内容的元素增加描述内容，例如只有图标的按钮等。
 
 ```html
 <button aria-label="搜索">
