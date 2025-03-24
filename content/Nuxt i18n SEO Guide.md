@@ -5,20 +5,46 @@ keywords:
   - Vue
   - i18n
   - SEO
+  - Component Interpolation
   - Locale
   - Head
+  - Scope resolving
   - link
+  - Advanced
   - meta
   - hreflang
+  - Basic Usage
   - OpenGraph
   - lang
   - canonical
-description: "Explore Nuxt i18n SEO with code examples using Layout Components and Composition API approaches for multilingual sites."
+description: "Basic configuration of Nuxt i18n, SEO, code examples for page components, and related reference documentation."
 created: 2025-03-02 08:30:53
-updated: 2025-03-02 08:30:53
+updated: 2025-03-24 11:50:07
 ---
 
 ## Configure
+
+`mkdir -p i18n/locales`
+
+`touch i18n/i18n.config.ts i18n/locales/en.json i18n/locales/zh-Hans.json`
+
+`i18n/i18n.config.ts`
+
+```ts
+import en from './locales/en.json'
+import et from './locales/et.json'
+
+export default defineI18nConfig(() => ({
+    legacy: false,
+    locale: 'en',
+    messages: {
+        en,
+        et,
+    }
+}))
+```
+
+`nuxt.config.ts`
 
 ```ts
 export default defineNuxtConfig({
@@ -33,39 +59,24 @@ export default defineNuxtConfig({
             {
                 code: 'en',
                 language: 'en',
-                name: 'English'
+                name: 'English',
+                file: 'en.json',
             },
             {
-                code: 'es',
-                language: 'es',
-                name: 'Español'
+                code: 'et',
+                language: 'et',
+                name: 'Eesti',
+                file: 'et.json'
             },
-            {
-                code: 'de',
-                language: 'de',
-                name: 'Deutsch'
-            },
-            {
-                code: 'fr',
-                language: 'fr',
-                name: 'Français'
-            },
-            {
-                code: 'ja',
-                language: 'ja',
-                name: '日本語'
-            },
-            {
-                code: 'zh-hans',
-                language: 'zh-Hans',
-                name: '简体中文'
-            }
-        ]
+        ],
+        vueI18n: 'i18n.config.ts',
     }
 })
 ```
 
-## Documentation examples
+Configuring the vueI18n option can help resolve potential warnings, such as `WARN [Vue warn]: Invalid watch source: en. A watch source must be a getter/effect function, a ref, a reactive object, or an array of these types`. This warning may occur when using certain packages. For example, I encountered it after installing @nuxtjs/sitemap version 7.2.9.
+
+## SEO Documentation examples
 
 ### Layout Components Approach
 
@@ -144,7 +155,7 @@ useHead(() => ({
 Access the `baseUrl` result:
 
 ```html
-<html  lang="en">
+<html lang="en">
   <link rel="alternate" href="<i18n.baseUrl>" hreflang="en" data-hid="7fcee50">
   <link rel="alternate" href="<i18n.baseUrl>/es" hreflang="es" data-hid="52a6c69">
   <link rel="alternate" href="<i18n.baseUrl>/de" hreflang="de" data-hid="5d718b2">
@@ -166,7 +177,7 @@ Access the `baseUrl` result:
 ## Enhanced Composition API Approach
 
 ```vue
-<script setup>
+<script setup lang="ts">
 const i18nHead = useLocaleHead({
     seo: true,
     key: 'id'
@@ -208,7 +219,63 @@ Access the `baseUrl` result:
   <meta id="i18n-og-alt-zh-Hans" property="og:locale:alternate" content="zh_Hans">
 ```
 
+## Page Component Usage Examples
+
+### Component Interpolation
+
+Sometimes, we need to localize with a locale message that was included in a HTML tag or component. For example:
+
+```html
+<p>Powered by <a href="https://1024.dev">1024</a></p>
+```
+
+`en.json`
+
+```json
+{
+    "powered_by": "Powered by {name}"
+}
+```
+
+```vue
+<i18n-t keypath="powered_by" tag="p">
+  <template #name>
+    <a href="https://1024.dev">
+      1024
+    </a>
+  </template>
+</i18n-t>
+```
+
+Output:
+
+```html
+<p>Powered by <a href="https://1024.dev">1024</a></p>
+```
+
+However, You sometimes meet the warning message on your browser console the following:
+
+```text
+[intlify] Not found parent scope. use the global scope.
+```
+
+A workaround to suppress this warning is to specify global as the scope property of Translation component.
+
+```html
+<i18n-t keypath="powered_by" scope="global" tag="p">
+  <template #name>
+    <a href="https://1024.dev">
+      1024
+    </a>
+  </template>
+</i18n-t>
+```
+
 ## See Also
 
+- [NuxtI18n - Usage](https://i18n.nuxtjs.org/docs/getting-started/usage)
 - [useLocaleHead](https://i18n.nuxtjs.org/docs/composables/use-locale-head)
 - [API Options](https://i18n.nuxtjs.org/docs/api/options)
+- [Vue I18n documentation](https://vue-i18n.intlify.dev/api/general#createi18n)
+- [Nuxt 3 integration - Vue I18n](https://vue-i18n.intlify.dev/guide/integrations/nuxt3.html)
+- [Component Interpolation | Vue I18n](https://vue-i18n.intlify.dev/guide/advanced/component.html)
