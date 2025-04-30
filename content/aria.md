@@ -10,7 +10,7 @@ keywords:
   - WAI-ARIA
 description: "HTML 无障碍访问属性相关说明。"
 created: 2025-03-24 05:22:58
-updated: 2025-03-24 05:22:58
+updated: 2025-04-30 01:18:45
 ---
 
 ## 描述
