@@ -15,7 +15,9 @@ updated: 2025-03-24 05:22:58
 
 ## 描述
 
-- `aria-label` 为没有文本内容的元素增加描述内容，例如只有图标的按钮等。
+### `aria-label` 和 `aria-labelledby`
+
+`aria-label` 为没有文本内容的元素增加名称，例如只有图标的按钮等。
 
 ```html
 <button aria-label="搜索">
@@ -23,7 +25,7 @@ updated: 2025-03-24 05:22:58
 </button>
 ```
 
-- `aria-labelledby` 引用页面上其他的元素内容作为描述，值为引用的元素 `id` 值，允许多个，多个的时候以空格隔开，可以包含元素自身的 `id`。在多个的时候屏幕阅读器会按照 id 顺序理解。
+`aria-labelledby` 引用页面上其他的元素内容作为名称信息，值为引用的元素 `id` 值，允许多个，多个的时候以空格隔开，可以包含元素自身的 `id`。在多个的时候屏幕阅读器会按照 id 顺序理解。
 
 ```html
 <span id="label1">文本助手</span>
@@ -31,7 +33,30 @@ updated: 2025-03-24 05:22:58
 <button aria-labelledby="label1 label2">txtify.app</button>
 ```
 
-`aria-labelledby` 的作用与 `aria-label` 相同。它为交互元素提供可识别的无障碍名称。如果一个元素同时设置了这两个属性，那么 `aria-labelledby` 将被使用。`aria-labelledby` 优先于所有其他提供无障碍名称的方法，包括 `aria-label`、`<label>` 和元素的内部文本。
+- `aria-labelledby` 的作用与 `aria-label` 相同。它为交互元素提供可识别的无障碍名称。
+- 如果一个元素同时设置了这两个属性，那么 `aria-labelledby` 将被使用。`aria-labelledby` 优先于所有其他提供无障碍名称的方法，包括 `aria-label`、`<label>` 和元素的内部文本。
+
+### `aria-describedby` 和 `aria-description`
+
+`aria-describedby`
+
+```html
+<button aria-describedby="trash-desc">txtify.app </button>
+<p id="trash-desc">
+  Items in the trash will be permanently removed after 30 days.
+</p>
+```
+
+`aria-description`
+
+```html
+<div
+  aria-label="calendar"
+  aria-description="Game schedule for the Boston Red Sox 2021 Season">
+  <h1>Red Sox 2021</h1>
+  <div role="grid">…</div>
+</div>
+```
 
 ## 控制
 
@@ -47,15 +72,27 @@ updated: 2025-03-24 05:22:58
 </div>
 ```
 
-`aria-expanded="false"` 指示 `aria-controls` 所影响控件是否展开或隐藏。可见时设置为 `true`，不可见时设置为 `false`。
+`aria-expanded="false"` 表示 `aria-controls` 所影响的控件是显示或隐藏。可见时设置为 `true`，不可见时设置为 `false`。
 
 ```html
-<button aria-expanded="false" aria-controls="widget1">Toggle widget</button>
+<button aria-expanded="false" aria-controls="widget1">txtify.app 复制 ₿ 字符</button>'
+<span class="sr-only">₿ 复制成功</span>
 ```
 
 ```html
-<button aria-expanded="true" aria-controls="widget1">Toggle widget</button>
+<button aria-expanded="true" aria-controls="widget1">txtify.app 复制 ₿ 特殊字符</button>
+<span>₿ 复制成功</span>
 ```
+
+`aria-haspopup` 表示此元素所交互到的元素类型
+
+- false
+- true
+- menu
+- listbox
+- tree
+- grid
+- dialog
 
 ## 状态
 
