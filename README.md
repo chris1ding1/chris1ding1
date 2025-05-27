@@ -27,7 +27,7 @@ Have a great day! 😊
 - 相互宝 ¥253.98 CNY
 - 水滴筹 ¥782 CNY
 - 轻松筹 ¥2360 CNY
-- 微信公众号文章 喜欢作者 ~¥500 CNY
+- Weixin Official Accounts Platform. 喜欢作者 ~¥500 CNY
 - Packagist/Composer 中国全量镜像 ~¥300 CNY
 - GNOME Foundation $2
 - [Open Collective - Chris](https://opencollective.com/chrisding)
