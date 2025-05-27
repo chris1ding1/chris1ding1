@@ -32,6 +32,7 @@ Have a great day! 😊
 - GNOME Foundation $2
 - [Open Collective - Chris](https://opencollective.com/chrisding)
 - [GitHub Sponsoring - Chris](https://github.com/chris1ding1?tab=sponsoring)
+- More...
 
 ## Blog Deploy
 
