@@ -34,6 +34,20 @@ Have a great day! 😊
 - [GitHub Sponsoring - Chris](https://github.com/chris1ding1?tab=sponsoring)
 - More...
 
+## My Software Purchases
+
+- Bear
+- Charles
+- Eudic Pro
+- Kaleidoscope
+- Office 365
+- PhpStorm
+- TablePlus
+- Tinkerwell
+- Transmit
+- VScode Extensions
+- More...
+
 ## Blog Deploy
 
 - Built with [md-star](https://github.com/chris1ding1/md-star)
