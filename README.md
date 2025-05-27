@@ -2,13 +2,13 @@
 
 Hi there, I'm Chris! 👋 Welcome to my profile.
 
-[Blog: chrisding.xyz](https://chrisding.xyz).
+Blog: [chrisding.xyz](https://chrisding.xyz)
 
 Follow me on: [X](https://x.com/chris1ding1) | [GitHub](https://github.com/chris1ding1)
 
 Have a great day! 😊
 
-**平常心** **做到自己的百分之百** **开发者** **一字不差阅读** **遇到问题解决问题** **简单** **契约** **jiàng**
+**平常心** · **做到自己的百分之百** · **开发者** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约** · **jiàng**
 
 ## My Products
 
