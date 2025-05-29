@@ -4,63 +4,59 @@
 <div class="sm:px-8 mt-14 sm:mt-24">
     <div class="mx-auto w-full max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
-            <div class="mx-auto max-w-2xl lg:max-w-5xl">
-                <header class="max-w-2xl">
-                    <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">About</h1>
-                    <p class="mt-1 text-base text-zinc-600 dark:text-zinc-400"></p>
-                </header>
-                <div class="mt-4 sm:mt-4">
-                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">平常心</span>
-                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">做到自己的百分之百</span>
-                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">开发者</span>
-                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">一字不差阅读</span><br>
-                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">遇到问题解决问题</span><br>
-                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">简单</span><br>
-                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">契约</span><br>
-                    <span class="bg-yellow-100 text-yellow-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-yellow-900 dark:text-yellow-300">jiàng</span><br>
-                    <p class="mt-2">
-                        <span>好好学习，好好玩，努力读书、锻炼身体、早睡早起！</span><br>
-                        <h2 class="text-2xl">我的赞助和捐款:</h2>
-                        <ul class="list-disc">
-                            <li>相互宝 253.98 元人民币</li>
-                            <li>水滴筹 782 元人民币</li>
-                            <li>轻松筹 2360 元人民币</li>
-                            <li>微信公众号文章喜欢作者近 500 人民币？</li>
-                            <li>Packagist/Composer 中国全量镜像 300 人民币？</li>
-                            <li><a href="https://opencollective.com/chrisding" class="underline">Open Collective Contributions</a></li>
-                            <li><a href="https://github.com/chris1ding1?tab=sponsoring" class="underline">GitHub Sponsoring</a></li>
-                            <li>...</li>
-                        </ul>
-                    </p><br>
-                </div>
-                <div class="mt-16 sm:mt-20">
-                    <ul role="list" class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
-                        {% for project in projects %}
-                        <li class="group relative flex flex-col items-start">
-                            <div
-                                class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                                <img alt="{{ project.name }}" loading="lazy" width="32" height="32" decoding="async" data-nimg="1"
-                                    class="h-8 w-8" style="color:transparent"
-                                    src="{{ project.icon }}"></div>
-                            <h2 class="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                                <div
-                                    class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50">
-                                </div><a href="{{ project.link }}"><span
-                                        class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span><span
-                                        class="relative z-10">{{ project.name }}</span></a>
-                            </h2>
-                            <p class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">{{ project.description }}</p>
-                            <p
-                                class="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
-                                <svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 flex-none">
-                                    <path
-                                        d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
-                                        fill="currentColor"></path>
-                                </svg><span class="ml-2">{{ project.link }}</span></p>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
+<div class="mx-auto max-w-2xl lg:max-w-5xl">
+
+                <h1 class="text-3xl font-bold mt-8 mb-4" id="about">About</h1>
+<p class="mt-2">Hi there, I'm Chris! 👋 Welcome to my profile.</p>
+<p class="mt-2">Follow me on: <a href="https://x.com/chris1ding1" class="text-blue-600 dark:text-blue-500 hover:underline">X</a> | <a href="https://github.com/chris1ding1" class="text-blue-600 dark:text-blue-500 hover:underline">GitHub</a></p>
+<p class="mt-2">Have a great day! 😊</p>
+<p class="mt-4"><strong>平常心</strong> · <strong>做到自己的百分之百</strong> · <strong>开发者</strong> · <strong>一字不差阅读</strong> · <strong>遇到问题解决问题</strong> · <strong>简单</strong> · <strong>契约</strong> · <strong>jiàng</strong></p>
+<h2 class="text-2xl font-semibold mt-6 mb-3" id="my-products">My Products<a class="headerlink" href="#my-products" title="Permanent link">¶</a></h2>
+<ul class="list-disc pl-5 my-4 space-y-2">
+<li class="mb-1"><a href="https://1024.dev" class="text-blue-600 dark:text-blue-500 hover:underline">1024 - Developer Community | 1024.dev</a> Resource Links, Developer Tools, Code Blocks, Data Reports.</li>
+<li class="mb-1"><a href="https://txtify.app" class="text-blue-600 dark:text-blue-500 hover:underline">Txtify - Text Helper | txtify.app</a> Text Converter, Special Characters, Character Counter, True Random String Generator and more.</li>
+<li class="mb-1"><a href="https://timemate.app" class="text-blue-600 dark:text-blue-500 hover:underline">Time Mate - Your Time Companion | timemate.app</a> Current Time, Calendar, Duration Explorer.</li>
+<li class="mb-1"><a href="https://wishwell.life" class="text-blue-600 dark:text-blue-500 hover:underline">WishWell - May you be free | wishwell.life</a> Data and Links</li>
+</ul>
+<h2 class="text-2xl font-semibold mt-6 mb-3" id="my-open-source-projects">My Open Source Projects<a class="headerlink" href="#my-open-source-projects" title="Permanent link">¶</a></h2>
+<ul class="list-disc pl-5 my-4 space-y-2">
+<li class="mb-1"><a href="https://github.com/chris1ding1/md-star" class="text-blue-600 dark:text-blue-500 hover:underline">md-star | Markdown to HTML Converter</a></li>
+<li class="mb-1"><a href="https://github.com/chris1ding1/masonite-lang" class="text-blue-600 dark:text-blue-500 hover:underline" >masonite-lang | Python Masonite Framework Language Package</a></li>
+</ul>
+<h2 class="text-2xl font-semibold mt-6 mb-3" id="my-donations">My Donations<a class="headerlink" href="#my-donations" title="Permanent link">¶</a></h2>
+<ul class="list-disc pl-5 my-4 space-y-2">
+<li class="mb-1">相互宝 ¥253.98 CNY</li>
+<li class="mb-1">水滴筹 ¥782 CNY</li>
+<li class="mb-1">轻松筹 ¥2360 CNY</li>
+<li class="mb-1">Weixin Official Accounts Platform. 喜欢作者 ~¥500 CNY</li>
+<li class="mb-1">Packagist/Composer 中国全量镜像 ~¥300 CNY</li>
+<li class="mb-1">GNOME Foundation $2</li>
+<li class="mb-1"><a class="text-blue-600 dark:text-blue-500 hover:underline" href="https://opencollective.com/chrisding">Open Collective - Chris</a></li>
+<li class="mb-1"><a class="text-blue-600 dark:text-blue-500 hover:underline" href="https://github.com/chris1ding1?tab=sponsoring">GitHub Sponsoring - Chris</a></li>
+<li class="mb-1">More...</li>
+</ul>
+<h2 class="text-2xl font-semibold mt-6 mb-3" id="my-software-purchases">My Software Purchases<a class="headerlink" href="#my-software-purchases" title="Permanent link">¶</a></h2>
+<ul class="list-disc pl-5 my-4 space-y-2">
+<li class="mb-1">Bear</li>
+<li class="mb-1">Charles</li>
+<li class="mb-1">Eudic Pro</li>
+<li class="mb-1">Kaleidoscope</li>
+<li class="mb-1">Office 365</li>
+<li class="mb-1">PhpStorm</li>
+<li class="mb-1">TablePlus</li>
+<li class="mb-1">Tinkerwell</li>
+<li class="mb-1">Transmit</li>
+<li class="mb-1">VScode Extensions</li>
+<li class="mb-1">More...</li>
+</ul>
+<h2 class="text-2xl font-semibold mt-6 mb-3" id="blog-deploy">Blog Deploy<a class="headerlink" href="#blog-deploy" title="Permanent link">¶</a></h2>
+<ul class="list-disc pl-5 my-4 space-y-2">
+<li class="mb-1">Built with <a href="https://github.com/chris1ding1/md-star">md-star</a></li>
+<li class="mb-1">deployed on Cloudflare Pages.</li>
+<li class="mb-1">Build command: pip install md-star &amp;&amp; mdstar build</li>
+<li class="mb-1">Build output: dist</li>
+</ul>
+
             </div>
         </div>
     </div>
