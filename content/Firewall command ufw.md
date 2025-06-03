@@ -1,6 +1,6 @@
 ---
-title: "Linux firewall command ufw"
-slug: 'linux-firewall-command-ufw'
+title: "Firewall command ufw"
+slug: 'Firewall-command-ufw'
 keywords:
   - UFW Essentials
   - Firewall Rules
