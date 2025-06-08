@@ -8,7 +8,7 @@ Follow me on: [X](https://x.com/chris1ding1) | [GitHub](https://github.com/chris
 
 Have a great day! 😊
 
-**平常心** · **做到自己的百分之百** · **开发者** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约** · **jiàng**
+**平常心** · **做到自己的百分之百** · **开发者** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约** · **jiàng** · **被动加班不是一个值得炫耀的事** · **中文文案排版指北**
 
 ## My Products
 
@@ -27,6 +27,9 @@ Have a great day! 😊
 - 相互宝 ¥253.98 CNY
 - 水滴筹 ¥782 CNY
 - 轻松筹 ¥2360 CNY
+- 腾讯公益 ¥120 CNY
+- 骑手打赏 ? CNY
+- 土耳其赈灾（2023.02.13 UTC-8） ? CNY
 - Weixin Official Accounts Platform. 喜欢作者 ~¥500 CNY
 - Packagist/Composer 中国全量镜像 ~¥300 CNY
 - GNOME Foundation $2
