@@ -16,7 +16,7 @@ Have a great day! 😊
 - [PinHub - Bookmark](https://pinhub.xyz) Easily save your favorite URLs, images, notes, and voice memos.
 - [Time Mate - Your Time Companion](https://timemate.app) Calendar, Current Time, Durations, Milestone & Timelines.
 - [Txtify - Text Helper](https://txtify.app) Character Counter, Chinese numerals, English alphabet, Special Characters, Text Converter, True Random String Generator, Zero-Width Space.
-- [WishWell - May you be free | wishwell.life](https://wishwell.life) Data and Links
+- [WishWell - May you be free](https://wishwell.life) Data and Links
 
 ## My Open Source Projects
 
