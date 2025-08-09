@@ -12,9 +12,10 @@ Have a great day! 😊
 
 ## My Products
 
-- [1024 - Developer Community | 1024.dev](https://1024.dev) Resource Links, Developer Tools, Code Blocks, Data Reports.
-- [Txtify - Text Helper | txtify.app](https://txtify.app) Text Converter, Special Characters, Character Counter, True Random String Generator and more.
-- [Time Mate - Your Time Companion | timemate.app](https://timemate.app) Current Time, Calendar, Duration Explorer.
+- [1024 - Developer Community](https://1024.dev) Code Blocks, Data Reports. Developer Tools, Resource Links.
+- [PinHub - Bookmark](https://pinhub.xyz) Easily save your favorite URLs, images, notes, and voice memos.
+- [Time Mate - Your Time Companion](https://timemate.app) Calendar, Current Time, Durations, Milestone & Timelines.
+- [Txtify - Text Helper](https://txtify.app) Character Counter, Chinese numerals, English alphabet, Special Characters, Text Converter, True Random String Generator, Zero-Width Space.
 - [WishWell - May you be free | wishwell.life](https://wishwell.life) Data and Links
 
 ## My Open Source Projects
