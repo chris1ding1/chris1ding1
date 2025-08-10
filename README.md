@@ -13,7 +13,7 @@ Have a great day! 😊
 ## My Products
 
 - [1024 - Developer Community](https://1024.dev) Code Blocks, Data Reports. Developer Tools, Resource Links.
-- [Pin Hub - Bookmark](https://pinhub.xyz) Easily save your favorite URLs, images, notes, and voice memos.
+- [Pin Hub - Bookmark Manager](https://pinhub.xyz) Easily save your favorite URLs, images, notes, and voice memos.
 - [Time Mate - Your Time Companion](https://timemate.app) Calendar, Current Time, Durations, Milestone & Timelines.
 - [Txtify - Text Helper](https://txtify.app) Character Counter, Chinese numerals, English alphabet, Special Characters, Text Converter, True Random String Generator, Zero-Width Space.
 - [Wish Well - May you be free](https://wishwell.life) Data and Links
