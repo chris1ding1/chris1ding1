@@ -4,7 +4,7 @@ Hi there, I'm Chris! 👋 Welcome to my profile.
 
 Blog: [chrisding.xyz](https://chrisding.xyz)
 
-Follow me on: [X](https://x.com/chris1ding1) | [GitHub](https://github.com/chris1ding1) | [Pinterest](https://www.pinterest.com/chris1ding1/_created)
+Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub](https://github.com/chris1ding1) | [Pinterest](https://www.pinterest.com/chris1ding1/_created) | [X](https://x.com/chris1ding1) 
 
 Have a great day! 😊
 
