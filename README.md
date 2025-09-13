@@ -4,7 +4,7 @@ Hi there, I'm Chris! 👋 Welcome to my profile.
 
 Blog: [chrisding.xyz](https://chrisding.xyz)
 
-Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub](https://github.com/chris1ding1) | [Pinterest](https://www.pinterest.com/chris1ding1/_created) | [X](https://x.com/chris1ding1) 
+Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub](https://github.com/chris1ding1) | [Pinterest](https://www.pinterest.com/chris1ding1/_created) | [X](https://x.com/chris1ding1)
 
 Have a great day! 😊
 
@@ -16,7 +16,6 @@ Have a great day! 😊
 - [Pin Hub - Bookmark Manager](https://pinhub.xyz) Easily save your favorite URLs, images, notes, and voice memos.
 - [Time Mate - Your Time Companion](https://timemate.app) Calendar, Current Time, Durations, Milestone & Timelines.
 - [Txtify - Text Helper](https://txtify.app) Character Counter, Chinese numerals, English alphabet, Special Characters, Text Converter, True Random String Generator, Zero-Width Space.
-- [Wish Well - May you be free](https://wishwell.life) Data and Links
 
 ## My Open Source Projects
 
