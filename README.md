@@ -33,8 +33,9 @@ Have a great day! 😊
 - 骑手打赏 ? CNY
 - 土耳其赈灾（2023.02.13 UTC-8） ? CNY
 - Weixin Official Accounts Platform. 喜欢作者 ~¥500 CNY
-- Packagist/Composer 中国全量镜像 ~¥300 CNY
 - GNOME Foundation $2
+- Khan Academy
+- Packagist/Composer 中国全量镜像 ~¥300 CNY
 - [Open Collective - Chris](https://opencollective.com/chrisding)
 - [GitHub Sponsoring - Chris](https://github.com/chris1ding1?tab=sponsoring)
 - More...
