@@ -2,9 +2,11 @@
 
 Hi there, I'm Chris! 👋 Welcome to my profile.
 
+多数时间是一名软件开发者，也曾有过一段创业经历（中国和欧洲）。注重守时。从 2016 年左右，可能更早，对于需付费的软件，一直正版订阅。每当在微信朋友圈看到大病众筹的信息，基本都会捐款，略表心意，看到喜欢或者认为有价值的公众号文章大概率的会赞赏（这几年少了，因为很少看公众号文章以及朋友圈发众筹的少了）。有一点点对开源作者，教育以及正义的支持。
+
 Blog: [chrisding.xyz](https://chrisding.xyz)
 
-Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub](https://github.com/chris1ding1) | [Pinterest](https://www.pinterest.com/chris1ding1/_created) | [X](https://x.com/chris1ding1)
+Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chris1ding1)
 
 Have a great day! 😊
 
