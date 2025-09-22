@@ -50,7 +50,3 @@ projects:
     description: "A handy text processing assistant with practical features including character counting, case conversion, and singular/plural transformation - making text processing simpler and more efficient."
     link: "https://txtify.app"
     icon: "https://txtify.app/favicon.svg"
-  - name: "WishWell"
-    description: "May you be free."
-    link: "https://wishwell.life/"
-    icon: "https://wishwell.life/favicons/favicon.svg"
