@@ -10,7 +10,7 @@ keywords:
   - Tutorial
 description: "使用 FastAPI 进行 API 项目开发的简明教程。FastAPI 和本地 Server 的安装，文件夹结构设置、代码编写、数据库连接、质量保证和测试，部署跟维护。"
 created: 2025-09-25 16:46:16
-updated: 2025-09-25 16:46:16
+updated: 2025-09-27 11:53:20
 ---
 
 👉 [FastAPI 中文官方教程](https://fastapi.tiangolo.com/zh/learn/)
@@ -30,7 +30,7 @@ cd my-project
 
 进入到虚拟环境里面 `source .venv/bin/activate`。每次你要安装新包时，都要在这个环境下执行，避免安装的包是不同的 Python 版本安装的。你在开发时，进入后，可以等待今日开发任务完成后再退出。无论安装包还是本地开发、运行，都在此状态下。
 
-`uv` 初始化：`uv init`。这将会给你创建 `main.py` 文件，包管理文件 `pyproject.toml` 文件以及 Python 版本声明文件 `.python-version`。
+`uv` 初始化：`uv init`。这将会给你创建 `main.py` 入口主文件，包管理文件 `pyproject.toml` 文件以及 Python 版本声明文件 `.python-version`。
 
 安装纯净框架：`uv add "fastapi"`。
 
@@ -41,6 +41,44 @@ cd my-project
 退出虚拟环境 `deactivate`。
 
 ## 开发
+
+查看项目当前的文件结构如下（`tree -a -L 1`）：
+
+```
+.
+├── .git
+├── .gitignore
+├── .python-version
+├── .venv
+├── main.py
+├── pyproject.toml
+├── README.md
+└── uv.lock
+```
+
+FastAPI 并未像一些框架规定文件夹，但是为了规范以及扩展等方面，我们需要调整文件夹目录结构，每个文件或者文件夹各司其责。如果你是一名成熟的开发者，想必已然想到需要建立哪些文件夹。虽然官方并未规定，但是提供了参考，详情可见 [FastAPI 教程：更大的应用 - 多个文件](https://fastapi.tiangolo.com/zh/tutorial/bigger-applications/)
+
+我们这次要创建的项目，实现写入和查询接口，接口内调用第三方 API 接口，调用个 AWS 服务。数据保存到 PostgreSQL 数据库。
+
+新的结构如下，项目根目录下创建 `app` 目录，原来的入口主文件也移动到  `app` 目录下。`routers` 作为路由文件夹。每个文件夹下创建内容为空的 `__init__.py` 文件，注意，以后每个目录或子目录中都有一个，作用是被用来子包。
+
+```text
+.
+├── app
+│   ├── __init__.py
+│   ├── main.py
+│   └── routers
+│   │   ├── __init__.py
+├── .git
+├── .gitignore
+├── .python-version
+├── .venv
+├── main.py
+├── pyproject.toml
+├── README.md
+└── uv.lock
+```
+
 
 项目启动，项目根目录下执行：
 
