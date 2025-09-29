@@ -32,7 +32,7 @@ Have a great day! 😊
 - 腾讯公益 ¥120 CNY
 - 骑手打赏 ? CNY
 - 土耳其赈灾（2023.02.13 UTC-8） ? CNY
-- Weixin Official Accounts Platform. 喜欢作者 ~¥500 CNY
+- Weixin Official Accounts Platform. 喜欢作者 ~¥1500 CNY
 - GNOME Foundation $2
 - Khan Academy
 - Packagist/Composer 中国全量镜像 ~¥300 CNY
