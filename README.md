@@ -6,7 +6,7 @@ Hi there, I'm Chris! 👋 Welcome to my profile.
 
 Blog: [chrisding.xyz](https://chrisding.xyz)
 
-Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chris1ding1)
+Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chrisdingxyz)
 
 Have a great day! 😊
 
@@ -32,7 +32,7 @@ Have a great day! 😊
 - 腾讯公益 ¥120 CNY
 - 骑手打赏 ? CNY
 - 土耳其赈灾（2023.02.13 UTC-8） ? CNY
-- Weixin Official Accounts Platform. 喜欢作者 ~¥500 CNY
+- Weixin Official Accounts Platform. 喜欢作者 ~¥1500 CNY
 - GNOME Foundation $2
 - Khan Academy
 - Packagist/Composer 中国全量镜像 ~¥300 CNY
