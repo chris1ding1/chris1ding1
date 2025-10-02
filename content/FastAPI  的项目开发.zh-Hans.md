@@ -10,7 +10,7 @@ keywords:
   - Tutorial
 description: "使用 FastAPI 进行 API 项目开发的简明教程。FastAPI 和本地 Server 的安装，文件夹结构设置、代码编写、数据库连接、质量保证和测试，部署跟维护。"
 created: 2025-09-25 16:46:16
-updated: 2025-09-27 11:53:20
+updated: 2025-10-02 11:53:20
 ---
 
 👉 [FastAPI 中文官方教程](https://fastapi.tiangolo.com/zh/learn/)
@@ -56,11 +56,16 @@ cd my-project
 └── uv.lock
 ```
 
-FastAPI 并未像一些框架规定文件夹，但是为了规范以及扩展等方面，我们需要调整文件夹目录结构，每个文件或者文件夹各司其责。如果你是一名成熟的开发者，想必已然想到需要建立哪些文件夹。虽然官方并未规定，但是提供了参考，详情可见 [FastAPI 教程：更大的应用 - 多个文件](https://fastapi.tiangolo.com/zh/tutorial/bigger-applications/)
+FastAPI 并未像一些框架规定文件夹，但是为了规范以及扩展等方面，我们需要调整文件夹目录结构，各司其责。如果你是一名成熟的开发者，想必已然想到需要建立哪些文件夹。虽然官方并未规定，但是提供了参考，详情可见 [FastAPI 教程：更大的应用 - 多个文件](https://fastapi.tiangolo.com/zh/tutorial/bigger-applications/)
 
-我们这次要创建的项目，实现写入和查询接口，接口内调用第三方 API 接口，调用个 AWS 服务。数据保存到 PostgreSQL 数据库。
+我们这次要创建的项目，以帖子的写入和查询接口为例子，接口内调用第三方 API 接口和 AWS 服务，数据库为 PostgreSQL。遵循 RESTful API 设计。
 
-新的结构如下，项目根目录下创建 `app` 目录，原来的入口主文件也移动到  `app` 目录下。`routers` 作为路由文件夹。每个文件夹下创建内容为空的 `__init__.py` 文件，注意，以后每个目录或子目录中都有一个，作用是被用来子包。
+新的结构如下：
+
+- 项目根目录下创建 `app` 目录
+- 原来的主入口主文件 `main.py` 移动到  `app` 目录下
+- `routers` 作为路由文件夹
+- 每个文件夹下创建内容为空的 `__init__.py` 文件。注意，以后每个目录或子目录中都有一个，作用是被认为子包，便于其它文件内导入 `import`
 
 ```text
 .
@@ -79,6 +84,28 @@ FastAPI 并未像一些框架规定文件夹，但是为了规范以及扩展等
 └── uv.lock
 ```
 
+主入口文件 `app.main.py` 代码示例如下:
+
+```python
+from fastapi import FastAPI
+
+from app.routers import posts
+
+app = FastAPI()
+
+app.include_router(posts.router)
+```
+
+路由文件 `app.routes.posts` 代码示例如下：
+
+```python
+from fastapi import APIRouter
+
+router = APIRouter(
+    prefix="/posts",
+    tags=["posts"],
+)
+```
 
 项目启动，项目根目录下执行：
 
