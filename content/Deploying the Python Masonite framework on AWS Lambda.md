@@ -25,8 +25,6 @@ updated: 2025-01-28 19:57:56
 
 Create the `lambda_function.py` file in the root directory of the project.
 
-[Source code](https://github.com/chris1ding1/on-serverless)
-
 ```python
 from wsgi import application
 import sys
