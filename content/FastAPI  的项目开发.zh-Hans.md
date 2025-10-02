@@ -10,7 +10,7 @@ keywords:
   - Tutorial
 description: "使用 FastAPI 进行 API 项目开发的简明教程。FastAPI 和本地 Server 的安装，文件夹结构设置、代码编写、数据库连接、质量保证和测试，部署跟维护。"
 created: 2025-09-25 16:46:16
-updated: 2025-10-02 13:16:06
+updated: 2025-10-02 14:20:27
 ---
 
 👉 [FastAPI 中文官方教程](https://fastapi.tiangolo.com/zh/learn/)
@@ -84,6 +84,14 @@ FastAPI 并未像一些框架规定文件夹，但是为了规范以及扩展等
 └── uv.lock
 ```
 
+安装包 `uv add python-multipart sqlmodel python-dotenv httpx pydantic-settings`：
+
+- `python-multipart` API 支持处理非 Json 的 Form 表单请求
+- `sqlmodel` 关系数据
+- `python-dotenv` 支持环境变量文件 `.env`
+- `httpx` 请求外部第三方请求
+- `pydantic-settings` 创建 Settings 对象，管理环境变量
+
 主入口文件 `app.main.py` 代码示例如下:
 
 ```python
@@ -112,6 +120,8 @@ router = APIRouter(
 ```bash
 uv run uvicorn app.main:app --reload
 ```
+
+FastAPI 全栈开发模版 👉 [Full Stack FastAPI Template](https://github.com/fastapi/full-stack-fastapi-template)
 
 ## 部署和维护
 
