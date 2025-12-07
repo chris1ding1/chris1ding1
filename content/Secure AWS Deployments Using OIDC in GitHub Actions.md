@@ -83,6 +83,40 @@ Click "Create role"
 }
 ```
 
+## Attaching permissions to the IAM role (AWS)
+
+- [IAM JSON policy elements: Action](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html)
+- [IAM JSON policy elements: Resource](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)
+
+```json
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Effect": "Allow",
+			"Action": [
+				// <service>:<action>
+			],
+			"Resource": [
+				// arn:aws:<service>:<region>:<account-id>:...
+			]
+		}
+	]
+}
+```
+
+Grants permission to update the specified Lambda function's code:
+
+```json
+"Action": [
+	"lambda:UpdateFunctionCode"
+],
+"Resource": [
+	"arn:aws:lambda:<region>:<account-id>:function:<function-name>"
+]
+```
+
 ## GitHub Actions workflow
 
 Use the [aws-actions/configure-aws-credentials](https://github.com/aws-actions/configure-aws-credentials) action to exchange the OIDC token (JWT) for a cloud access token.
