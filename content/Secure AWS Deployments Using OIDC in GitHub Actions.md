@@ -13,7 +13,7 @@ keywords:
   - Security
 description: "Learn how to securely deploy to AWS from GitHub Actions using OIDC, eliminating the need for long-lived credentials."
 created: 2025-12-07 13:01:55
-updated: 2025-12-07 13:01:55
+updated: 2025-12-07 13:46:53
 ---
 
 ## Adding the identity provider to AWS
