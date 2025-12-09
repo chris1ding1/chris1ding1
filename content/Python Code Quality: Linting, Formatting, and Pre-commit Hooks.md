@@ -13,7 +13,7 @@ keywords:
   - pyproject.toml
 description: "Learn how to set up Python code quality tools including Ruff for lightning-fast linting and formatting, mypy for static type checking, and pre-commit for automated git hooks to enforce consistent code standards."
 created: 2025-12-09 02:11:10
-updated: 2025-12-09 02:31:15
+updated: 2025-12-09 12:50:08
 ---
 
 ## Overview
@@ -31,20 +31,20 @@ uv add --dev ruff mypy pre-commit
 ```
 
 ```bash
-mypy <DIR>
+uv run mypy <DIR>
 ```
 
 ```bash
-ruff check               # Lint all files in the current directory.
-ruff check --fix         # Lint files in the current directory and fix any fixable errors.
-ruff check --watch       # Run in watch mode by re-running whenever files change
-ruff check path/to/code/ # Lint files in `path/to/code`.
+uv run ruff check               # Lint all files in the current directory.
+uv run ruff check --fix         # Lint files in the current directory and fix any fixable errors.
+uv run ruff check --watch       # Run in watch mode by re-running whenever files change
+uv run ruff check path/to/code/ # Lint files in `path/to/code`.
 ```
 
 ```bash
-ruff format                   # Format all files in the current directory.
-ruff format path/to/code/     # Format all files in `path/to/code` (and any subdirectories).
-ruff format path/to/file.py   # Format a single file.
+uv run ruff format                   # Format all files in the current directory.
+uv run ruff format path/to/code/     # Format all files in `path/to/code` (and any subdirectories).
+uv run ruff format path/to/file.py   # Format a single file.
 ```
 
 Ruff accepts multiple files or directories, separated by spaces.
@@ -90,12 +90,12 @@ keep-runtime-typing = true
 
 ## pre-commit
 
-`pre-commit --version` should show you what version you're using.
+`uv run pre-commit --version` should show you what version you're using.
 
 ### Add a pre-commit configuration
 
 - create a file named: `.pre-commit-config.yaml`
-- you can generate a very basic configuration using `pre-commit sample-config`
+- you can generate a very basic configuration using `uv run pre-commit sample-config`
 
 Demo:
 
@@ -131,5 +131,5 @@ ci:
 ### Install the git hook scripts
 
 ```bash
-pre-commit install
+uv run pre-commit install
 ```
