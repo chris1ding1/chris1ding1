@@ -13,7 +13,7 @@ keywords:
   - pyproject.toml
 description: "Learn how to set up Python code quality tools including Ruff for lightning-fast linting and formatting, mypy for static type checking, and pre-commit for automated git hooks to enforce consistent code standards."
 created: 2025-12-09 02:11:10
-updated: 2025-12-09 02:13:41
+updated: 2025-12-09 02:31:15
 ---
 
 ## Overview
@@ -52,6 +52,8 @@ Ruff accepts multiple files or directories, separated by spaces.
 When running with --fix, Ruff's lint should be placed before Ruff's formatter, and before Black, isort, and other formatting tools, as Ruff's fix behavior can output code changes that require reformatting.
 
 ## Configuration
+
+`pyproject.toml`
 
 ```toml
 [tool.mypy]
