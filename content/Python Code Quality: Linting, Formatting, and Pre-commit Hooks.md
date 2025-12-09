@@ -13,7 +13,7 @@ keywords:
   - pyproject.toml
 description: "Learn how to set up Python code quality tools including Ruff for lightning-fast linting and formatting, mypy for static type checking, and pre-commit for automated git hooks to enforce consistent code standards."
 created: 2025-12-09 02:11:10
-updated: 2025-12-09 02:11:10
+updated: 2025-12-09 02:13:41
 ---
 
 ## Overview
@@ -24,11 +24,11 @@ updated: 2025-12-09 02:11:10
 
 [pre-commit](https://pre-commit.com/) A framework for managing and maintaining multi-language pre-commit hooks. `pre-commit` works for any programming language.
 
+## Installation
+
 ```bash
 uv add --dev ruff mypy pre-commit
 ```
-
-## Installation
 
 ```bash
 mypy <DIR>
