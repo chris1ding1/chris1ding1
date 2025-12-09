@@ -14,7 +14,7 @@ keywords:
   - access token
 description: "Implement JWT authentication and secure password hashing in FastAPI using PyJWT and pwdlib with Argon2. Complete code examples for login, token generation, and user verification."
 created: 2025-12-09 15:47:08
-updated: 2025-12-09 15:47:08
+updated: 2025-12-09 16:20:09
 ---
 
 ## Install
@@ -29,7 +29,7 @@ uv add pyjwt
 
 If you are planning to use digital signature algorithms like RSA or ECDSA, you should install the cryptography library dependency `pyjwt[crypto]`.
 
-[PyJWT docs](https://pyjwt.readthedocs.io/en/latest/index.html)
+[PyJWT documentation](https://pyjwt.readthedocs.io/en/latest/index.html)
 
 ### Password hashing
 
@@ -40,6 +40,8 @@ The recommended algorithm is "Argon2".
 ```bash
 uv add "pwdlib[argon2]"
 ```
+
+[pwdlib documentation](https://frankie567.github.io/pwdlib/)
 
 ## Implementation
 
