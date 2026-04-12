@@ -1,6 +1,6 @@
 ---
 title: "简洁实用的时间工具 - Timemate.app 时间伙伴"
-slug: 
+slug: "jian-jie-shi-yong-de-shi-jian-gong-ju-timemate-app-shi-jian-huo-ban"
 keywords:
   - 实用工具
   - 国际日历
@@ -39,6 +39,7 @@ updated: 2026-04-12 10:16:58
 了解计算两个时间点之间相差多少，并以多种时间单位展示。
 
 例如内置的动态 “年底倒计时”，多段落的显示当前时间距今年年底还有多少时间：
+
 - xxx 秒
 - xxx 分钟 xxx 秒
 - xxx 小时 xxx 分钟 xxx 秒
