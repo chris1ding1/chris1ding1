@@ -10,12 +10,12 @@ Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub
 
 Have a great day! 😊
 
-**平常心** · **做到自己的百分之百** · **开发者** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约** · **jiàng** · **被动加班不是一个值得炫耀的事** · **中文文案排版指北**
+**平常心** · **做到自己的百分之百** · **开发者** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约**
 
 ## My Products
 
-- [1024 - Developer Community](https://1024.dev) Code Blocks, Data Reports. Developer Tools, Resource Links.
 - [Pin Hub - Bookmark Manager](https://pinhub.xyz) Easily save your favorite URLs, images, notes, and voice memos.
+- [Seashore](https://seashore.cloud) Language Learning – Listening Practice & Pronunciation Assessment in 33 Languages
 - [Time Mate - Your Time Companion](https://timemate.app) Calendar, Current Time, Durations, Milestone & Timelines.
 - [Txtify - Text Helper](https://txtify.app) Character Counter, Chinese numerals, English alphabet, Special Characters, Text Converter, True Random String Generator, Zero-Width Space.
 
