@@ -6,7 +6,7 @@ Blog: [chrisding.xyz](https://chrisding.xyz)
 
 Follow me on: [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chris1ding1)
 
-Worker | Software Engineer | Startup Founder | Indie Developer | Hackathon | AI Trainer
+AI Trainer | Blogger | Hackathon | Indie Developer | Software Engineer | Startup Founder | Worker
 
 **平常心** · **做到自己的百分之百** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约**
 
