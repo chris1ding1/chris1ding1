@@ -8,7 +8,7 @@ Follow me on: [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chris
 
 AI Trainer | Blogger | Hackathon | Indie Developer | Software Engineer | Startup Founder | Worker
 
-**平常心** · **做到自己的百分之百** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约** · **尊重他人劳动成果 - 日常随喜**
+一字不差阅读｜平常心｜契约｜做到自己的百分之百｜遇到问题解决问题｜尊重他人劳动成果 - 日常随喜、订阅...｜简单
 
 Have a great day! 😊
 

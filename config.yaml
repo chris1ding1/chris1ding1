@@ -8,7 +8,7 @@ site:
   keywords:
     - Blog
     - Chris
-  description: "Chris's blog. 生活记录和技术笔记。"
+  description: "Chris's blog. 技术笔记、教育、健康、产品项目、选购、思考总结。"
   sort_by: "created"
   article_type: "BlogPosting"
   about:
