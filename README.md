@@ -2,25 +2,26 @@
 
 Hi there, I'm Chris! 👋 Welcome to my profile.
 
-多数时间是一名软件开发者，也曾有过一段创业经历（中国和欧洲）。注重守时。从 2016 年左右，可能更早，对于需付费的软件，一直正版订阅。每当在微信朋友圈看到大病众筹的信息，基本都会捐款，略表心意，看到喜欢或者认为有价值的公众号文章大概率的会赞赏（这几年少了，因为很少看公众号文章以及朋友圈发众筹的少了）。有一点点对开源作者，教育以及正义的支持。
-
 Blog: [chrisding.xyz](https://chrisding.xyz)
 
-Follow me on: [Bsky](https://bsky.app/profile/chris1ding1.bsky.social) | [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chrisdingxyz)
+Follow me on: [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chris1ding1)
+
+Worker | Software Engineer | Startup Founder | Indie Developer | Hackathon | AI Trainer
+
+**平常心** · **做到自己的百分之百** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约**
 
 Have a great day! 😊
 
-**平常心** · **做到自己的百分之百** · **开发者** · **一字不差阅读** · **遇到问题解决问题** · **简单** · **契约**
+## Projects
 
-## My Products
-
-- [Pin Hub - Bookmark Manager](https://pinhub.xyz) Easily save your favorite URLs, images, notes, and voice memos.
+- [Pin Hub](https://pinhub.xyz) A minimalist web utility that lets you query multiple search engines (Google, Bing, DuckDuckGo, Yandex, Baidu) with a single click.
 - [Seashore](https://seashore.cloud) Language Learning – Listening Practice & Pronunciation Assessment in 33 Languages
-- [Time Mate - Your Time Companion](https://timemate.app) Calendar, Current Time, Durations, Milestone & Timelines.
+- [Time Mate - Your Time Companion](https://timemate.app) Multi-Region Calendars, Current Time, Durations, Milestones & Timelines, Countdown Timer, Stopwatch and more.
 - [Txtify - Text Helper](https://txtify.app) Character Counter, Chinese numerals, English alphabet, Special Characters, Text Converter, True Random String Generator, Zero-Width Space.
 
-## My Open Source Projects
+## Public Code
 
+- [DB Backup | A database backup utility that automates MySQL/PostgreSQL dumps and uploads them to Amazon S3 or Cloudflare R2](https://github.com/chris1ding1/db-backup)
 - [md-star | Markdown to HTML Converter](https://github.com/chris1ding1/md-star)
 - [masonite-lang | Python Masonite Framework Language Package](https://github.com/chris1ding1/masonite-lang)
 
@@ -32,7 +33,7 @@ Have a great day! 😊
 - 腾讯公益 ¥120 CNY
 - 骑手打赏 ? CNY
 - 土耳其赈灾（2023.02.13 UTC-8） ? CNY
-- Weixin Official Accounts Platform. 喜欢作者 ~¥1500 CNY
+- WeChat Official Accounts Platform. 喜欢作者 ~¥1500 CNY
 - GNOME Foundation $2
 - Khan Academy
 - Packagist/Composer 中国全量镜像 ~¥300 CNY
@@ -57,6 +58,6 @@ Have a great day! 😊
 ## Blog Deploy
 
 - Built with [md-star](https://github.com/chris1ding1/md-star)
-- deployed on Cloudflare Pages.
+- Deployed on Cloudflare Pages.
   - Build command: pip install md-star && mdstar build
   - Build output: dist
