@@ -4,7 +4,7 @@ Hi there, I'm Chris! 👋 Welcome to my profile.
 
 Blog: [chrisding.xyz](https://chrisding.xyz)
 
-Follow me on: [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chris1ding1)
+Follow me on: [GitHub](https://github.com/chris1ding1) | [X](https://x.com/chris1ding1) | [YouTube](https://www.youtube.com/@chris1ding1)
 
 AI Trainer | Blogger | Hackathon | Indie Developer | Software Engineer | Startup Founder | Worker
 
