@@ -318,3 +318,8 @@ print(a) # 打印变量 a，显示 ['gg','zz']
 - 孩子的上课状态，时间上大概可以在 1 个半小时左右，没什么问题
 - 小学三年级以上（含三年级），根据官方文档的节奏系统的学习编程完全没有问题，一方面是有了基本的数学计算，对事务也有了初步的逻辑认知
 - 可惜寒假有些短，孩子作业又超多，就只上了四节课
+
+## 相关文章
+
+- [孩子的教育成长方向](https://chrisding.xyz/posts/hai-zi-de-jiao-yu-cheng-zhang-fang-xiang)
+- [孩子的寒假生活](https://chrisding.xyz/posts/hai-zi-de-han-jia-sheng-huo-san-nian-ji-shang)
